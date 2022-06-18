@@ -1,0 +1,17 @@
+{
+  "register": {
+    "required": "{field} is required",
+    "username.minLength": "Username not valid please enter more then three character",
+    "username.maxLength": "Username not valid please enter less then fifty character",
+    "email.email": "Please enter valid email address",
+    "password.minLength": "Password not valid please enter more then eight character",
+    "password.maxLength": "Password not valid please enter less then 100 character",
+    "confirm_password.confirmed": "confirm password is not matched with a password",
+    "unique": "{field} is already exists"
+  },
+  "success": "{username} is successfully registered",
+  "login":{
+    "success": "Logged Successfully",
+    "fail":"Please enter required fields"
+  }
+}
