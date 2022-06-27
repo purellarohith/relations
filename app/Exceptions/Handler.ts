@@ -8,6 +8,11 @@ export default class ExceptionHandler extends HttpExceptionHandler {
     }
     public async handle(error: any, { response, i18n, logger }: HttpContextContract) {
         logger.info(error);
+        if (error.code === 'E_VALIDATION_FAILURE') {
+            console.log(error.messages);
+            // error.messages.message = error.messages;
+            return response.status(200).json({ success: 0, message: error.messages.message });
+        }
         if (error.code === 'E_ROW_NOT_FOUND') {
             // error.messages.message = error.messages.data[0].message;
             return response.status(200).json({ success: 0, message: error.message });
