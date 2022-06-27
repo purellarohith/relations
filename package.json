@@ -19,10 +19,12 @@
     "mv": "node ace make:validator",
     "ms": "node ace make:seeder",
     "rs": "node ace db:seed",
+    "mj":"node ace make:job",
     "config_lucid": "node ace configure @adonisjs/lucid",
     "config_redis": "node ace configure @adonisjs/redis",
     "config_auth": "node ace configure @adonisjs/auth",
-    "config_i18n": "node ace configure @adonisjs/i18n"
+    "config_i18n": "node ace configure @adonisjs/i18n",
+    "config_bull": "node ace invoke @rocketseat/adonis-bull"
   },
   "eslintConfig": {
     "extends": [
@@ -73,11 +75,14 @@
     "@adonisjs/lucid": "^18.0.1",
     "@adonisjs/redis": "^7.3.0",
     "@adonisjs/repl": "^3.1.0",
+    "@rocketseat/adonis-bull": "^1.0.4",
+    "add": "^2.0.6",
     "luxon": "^2.4.0",
     "mysql": "^2.18.1",
     "phc-argon2": "^1.1.3",
     "proxy-addr": "^2.0.7",
     "reflect-metadata": "^0.1.13",
-    "source-map-support": "^0.5.21"
+    "source-map-support": "^0.5.21",
+    "yarn": "^1.22.19"
   }
 }
